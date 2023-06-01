@@ -23,7 +23,8 @@ public class Quadratic{
             System.out.println("Root :"+root);
         }
         else{
-            double realPart= Math.sqrt(-discriminant)/(2*a);
+            double realPart=-b/(2*a);
+            double imaginaryPart= Math.sqrt(-discriminant)/(2*a);
             System.out.println("Roots imaginary and different");
             System.out.println("Root :"+realPart);
         }
