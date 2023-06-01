@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 class Palindrome{
     public static void main(String[] args){
-        String input="radar";
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string");
+        String input = sc.nextLine();
         boolean isPalindrome= true;
 
         for (int i=0; i<input.length(); i++){
@@ -10,10 +15,10 @@ class Palindrome{
             }
         }
         if(isPalindrome) {
-            System.out.println("String is palindrome");
+            System.out.println(input+ " is palindrome");
         }
         else{
-            System.out.println("String is not palindrome");
+            System.out.println(input+ " is not palindrome");
         }
     }
 }
